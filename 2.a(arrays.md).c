@@ -2,9 +2,9 @@
 
 int main ()
 {
-	int mas[100], i, n;
+	int mas[300], i, n;
 	
-	printf("Vvedite n:");
+	printf("Vvedite n: ");
 	scanf("%d", &n);
 	
 	for(i = 1; i <= n; i++) {
