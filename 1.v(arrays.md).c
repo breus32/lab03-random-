@@ -31,8 +31,8 @@ main()
     srand(time(0));
 
     for (i = 0; i < n; i++) {
-	    mas[i] = get_random_int_min_max(min, max);
-	    printf("%d\n", mas[i]);
+    	mas[i] = get_random_int_min_max(min, max);
+    	printf("%d\n", mas[i]);
     }
     
 	return 0;
