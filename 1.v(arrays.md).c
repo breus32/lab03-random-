@@ -18,17 +18,16 @@ main()
     int mas[100];
     int n, i, max, min;
     int max_rand;
+    
+    printf("Razmer masiva= ");
+    scanf("%d", &n);
+    
+    printf("\nVvedite MinZna4ennya= ");
+    scanf("%d", &min);
+    
+    printf("\nVvedite MaxZna4ennya= ");
+    scanf("%d", &max);
 	
-	printf("Razmer masiva= ");
-	scanf("%d", &n);
-	
-	printf("\nVvedite MinZna4ennya= ");
-	scanf("%d", &min);
-	
-	printf("\nVvedite MaxZna4ennya= ");
-	scanf("%d", &max);
-	
-
     srand(time(0));
 
     for (i = 0; i < n; i++) {
