@@ -16,23 +16,25 @@ int get_random_int_min_max(int min_rand, int max_rand)
 main()
 {
     int mas[100];
-    int n, i, x, y;
+    int n, i, max, min;
     int max_rand;
 	
-	printf("Vvedite MinZna4ennya= ");
-	scanf("%d", &y);
+	printf("Razmer masiva= ");
+	scanf("%d", &n);
+	
+	printf("\nVvedite MinZna4ennya= ");
+	scanf("%d", &min);
 	
 	printf("\nVvedite MaxZna4ennya= ");
-	scanf("%d", &x);
+	scanf("%d", &max);
 	
 
     srand(time(0));
 
     for (i = 0; i < n; i++) {
-	mas[i] = get_random_int_min_max(y, x);
+	    mas[i] = get_random_int_min_max(min, max);
+	    printf("%d\n", mas[i]);
     }
-
-    for (i = 0; i < n; i++) {
-        printf("%d\n", mas[i]);
-    }
+    
+	return 0;
 }
