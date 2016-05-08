@@ -1,6 +1,16 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <time.h>
+
+int get_random_int(int max_rand)
+{
+    return rand() % max_rand;
+}
+
+
+int get_random_int_min_max(int min_rand, int max_rand)
+{
+    return min_rand + rand() % (max_rand - min_rand);
+}
 
 int main() 
 {
@@ -12,12 +22,11 @@ int main()
 	
 	srand(time(0));
 	
-	for(i = 0; i < 20; i++) {
-		mas[i] = ((float)rand() / RAND_MAX) * n;
+	for(i = 0; i < n; i++) {
+		mas[i] = get_random_int_min_max(0, n);
 		printf("\nmas[%d] = %lf", i, mas[i]);
 	}
 	
 	return 0;
 }
-
 
