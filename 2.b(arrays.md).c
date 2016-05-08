@@ -11,8 +11,8 @@ int main ()
 	scanf("%d", &b);
 	
 	for(i = 0, n = a; n <= b; i++, n++) {
-		mas[i] = n;
-		printf("\nmas[%d] = %d", i, mas[i]);
+	    mas[i] = n;
+	    printf("\nmas[%d] = %d", i, mas[i]);
 	}	
 	
 	return 0;
