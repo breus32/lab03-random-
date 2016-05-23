@@ -9,8 +9,8 @@ int main ()
 	printf("\nVvedite n: ");
 	scanf("%lf", &n);
 	
-	for(i = 0, a = 1; a < n; i++) {
-		a = a + 0.1
+	for(a = 1; a < n; i++) {
+		a = a + 0.1;
 		mas[i] = a;
 		printf("%.1lf\n", a);
 	}	
